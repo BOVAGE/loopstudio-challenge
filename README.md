@@ -15,9 +15,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,16 +26,16 @@ Users should be able to:
 
 ### Screenshot
 ## Desktop Preview
-![desktop screenshot](images/desktop screenshot.png)
+![desktop screenshot](./images/desktop screenshot.png)
 
 ##Mobile Preview
-![mobile screenshot](images/mobile screeshot.png)
+![mobile screenshot](./images/mobile screeshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BOVAGE/loopstudio-challenge)
-- Live Site URL: [Add live site URL here](https://bovage.github.io/loopstudio-challenge/)
+- Solution URL: [solution URL](https://github.com/BOVAGE/loopstudio-challenge)
+- Live Site URL: [site URL](https://bovage.github.io/loopstudio-challenge)
 
 ## My process
 
