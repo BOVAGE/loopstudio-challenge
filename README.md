@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 ## Desktop Preview
-![desktop screenshot]("./images/desktop screenshot.png").
+![desktop screenshot](./images/desktop%20screenshot.png).
 
 ##Mobile Preview
 
-![mobile screenshot]("./images/mobile screeshot.png").
+![mobile screenshot]("./images/mobile%20screeshot.png").
 
 
 ### Links
