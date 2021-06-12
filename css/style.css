@@ -170,19 +170,56 @@ h2 {
     font-weight: lighter;
 }
 
-.four-cols-container {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px max-content max-content;
+    grid-template-areas: "h h h h . . . . . . . b"
+                         "o o o t t t r r r f f f"
+                         "e e e s s s v v v g g g";
     gap: 25px;
 }
 
-.four-cols-container img {
+.grid-container img {
     width: 100%;
     height: 100%;
 }
 
-.four-cols-container > div {
+.grid-container > div {
     position: relative;
+}
+
+.grid-container > h2 {
+    grid-area: h;
+}
+
+.grid-container > button {
+    grid-area: b;
+}
+
+.grid-container > div.one  {
+    grid-area: o;
+}
+.grid-container > div.two  {
+    grid-area: t;
+}
+.grid-container > div.three  {
+    grid-area: r;
+}
+.grid-container > div.four  {
+    grid-area: f;
+}
+.grid-container > div.five  {
+    grid-area: e;
+}
+.grid-container > div.six  {
+    grid-area: s;
+}
+.grid-container > div.seven  {
+    grid-area: v;
+}
+.grid-container > div.eight  {
+    grid-area: g;
 }
 
 h4 {
@@ -259,7 +296,7 @@ footer header {
 }
 
 @media screen and (max-width: 980px) {
-    .four-cols-container {
+    .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -349,7 +386,7 @@ footer header {
         padding: 1.1rem 0 0;
     }
 
-    .four-cols-container {
+    .grid-container {
         grid-template-columns: 1fr;
     }
 
