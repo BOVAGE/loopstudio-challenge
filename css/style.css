@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+/* general rules */
+:root {
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    font-size: 0.6rem;
+    font-weight: bolder;
+    color: var(--Black);
+    letter-spacing: 0.2rem;
+    outline: none;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+}
+
+button:hover {
+    background-color: var(--Black);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 5.3rem;
+}
+
+.tb-padding {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.nav-items {
+    flex-basis: 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.nav-items > li {
+    margin-right: 1.5rem;
+}
+
+.nav-items > li:last-of-type {
+    margin-right: 0;
+}
+
+/* hero section rules */
+#header {
+    position: relative;
+    color: var(--White);
+    padding: 30px 0;
+    height: 490px;
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-position: left 20%;
+    background-repeat: no-repeat;
+}
+
+h3 {
+    font-family: 'Alata', sans-serif;
+}
+
+.nav-items a {
+    color: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#menuicon {
+    display: none;
+    cursor: pointer;
+}
+
+#hero-text {
+    font-size: 3.0rem;
+    text-transform: uppercase;
+    padding: 1.3rem;
+    width: 400px;
+    line-height: 1;
+    border: 1px solid var(--White);
+    position: absolute;
+    bottom: 100px;
+}
+
+/* about section */
+.img-text-container {
+    height: 500px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.img-text-container img {
+    flex-basis: 50%;
+}
+
+.side-text {
+    background-color: white;
+    flex-basis: 50%;
+    height: 60%;
+    align-self: flex-end;
+    padding: 3rem 2.5rem 0.8rem;
+    position: relative;
+    right: 120px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    padding: 1.1rem 0;
+    font-weight: lighter;
+}
+
+.side-text > p {
+    font-size: 0.9rem;
+    padding: 1.2rem 0.8rem 0;
+    font-weight: bold;
+    color: var(--Very-Dark-Gray);
+}
+
+/* creaction section rules */
+h2, button {
+    text-transform: uppercase;
+    align-self: center;
+}
+
+h2 {
+    font-size: 2.1rem;
+    font-weight: lighter;
+}
+
+.four-cols-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.four-cols-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.four-cols-container > div {
+    position: relative;
+}
+
+h4 {
+    color: var(--White);
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.8rem;
+    width: 150px;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+/* footer section */
+footer {
+    background-color: var(--Black);
+    padding: 0.9rem 0;
+}
+
+footer header {
+    margin: 1.0rem 0;
+    color: var(--White);
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons > li {
+    margin-left: 0.7rem;
+}
+
+.social-icons > li:hover,
+.nav-items  li:hover{
+    border-bottom: 1px solid var(--White)
+}
+
+.social-icons img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.copyright-text {
+    color: var(--Very-Dark-Gray);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: end;
+}
+
+.attribution { 
+    display: none;
+    font-size: 1.0rem; 
+    text-align: center; 
+    color: black;
+    font-weight: bold;
+}
+
+.attribution a {
+    color: hsl(228, 54%, 50%); 
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1310px) {
+    .img-text-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .side-text {
+        position: static;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 980px) {
+    .four-cols-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        text-align: center;
+    }
+    
+    .container {
+        padding-left: 1.9rem;
+        padding-right: 1.9rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header {
+        background-image: url("../images/mobile/image-hero.jpg");
+        background-position: top right;
+        height: 600px;
+    }
+
+    header#navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* remove z-index and add to js */
+    #menuicon {
+        display: block;
+        z-index: 3;
+    }
+
+    #brandname {
+        z-index: 3;
+        font-size: 1.5rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    #menubar.nav-items > li a {
+        color: var(--Dark-Gray);
+        font-size: 1.8rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+
+    .nav-items > li {
+        margin-right: 0;
+    }
+
+    #menubar.nav-items {
+        background-color: var(--Black);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 1.9rem;
+    }
+
+    #menubar.nav-items.show {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #hero-text {
+        width: 90%;
+    }
+
+    #hero-text, h4 {
+        text-align: left;
+    }
+
+    .side-text > h1 {
+        line-height: 1;
+        font-size: 1.8rem;
+        padding: 1.1rem 0 0;
+    }
+
+    .four-cols-container {
+        grid-template-columns: 1fr;
+    }
+
+    h4 {
+        font-size: 1.33rem;
+        left: 1rem;
+        bottom: 1.2rem;
+        width: 120px;
+    }
+
+    footer header {
+        margin: 0;
+    }
+
+    .social-icons {
+        padding: 1rem 0;
+    }
+}
