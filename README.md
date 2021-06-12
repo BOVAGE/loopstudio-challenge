@@ -30,7 +30,7 @@ Users should be able to:
 
 ##Mobile Preview
 
-![mobile screenshot]("./images/mobile%20screeshot.png").
+![mobile screenshot](./images/mobile%20screeshot.png).
 
 
 ### Links
