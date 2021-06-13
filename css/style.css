@@ -89,6 +89,11 @@ header {
     margin-right: 0;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
 /* hero section rules */
 #header {
     position: relative;
@@ -177,10 +182,8 @@ h2 {
     font-weight: lighter;
 }
 
-.grid-container {
-    display: grid;
+#our-creations .grid-container {
     justify-items: legacy;
-    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 60px max-content max-content;
     grid-auto-rows: max-content;
     grid-template-areas: "h h h h . . . . . . . b"
@@ -246,15 +249,26 @@ h4 {
 footer {
     background-color: var(--Black);
     padding: 0.9rem 0;
-}
-
-footer header {
-    margin: 1.0rem 0;
     color: var(--White);
 }
 
+footer .grid-container {
+    grid-template-areas: "b b b b b . . . m m m m"
+                         "i i i i i . c c c c c c";
+}
+
+footer h3.brandname {
+    grid-area: b;
+}
+
+footer .nav-items {
+    grid-area: i;
+}
+
 .social-icons {
+    grid-area: m;
     display: flex;
+    justify-content: flex-end;
 }
 
 .social-icons > li {
@@ -272,6 +286,7 @@ footer header {
 }
 
 .copyright-text {
+    grid-area: c;
     color: var(--Very-Dark-Gray);
     font-size: 0.8rem;
     font-weight: bold;
@@ -305,7 +320,7 @@ footer header {
 }
 
 @media screen and (max-width: 980px) {
-    .grid-container {
+    #our-creations .grid-container {
         grid-template-areas:"h h h h h h h h h h . b"
                             "o o o o o o t t t t t t"
                             "r r r r r r f f f f f f"
@@ -349,7 +364,7 @@ footer header {
         z-index: 3;
     }
 
-    #brandname {
+    .brandname {
         z-index: 3;
         font-size: 1.5rem;
     }
@@ -409,7 +424,7 @@ footer header {
         font-size: 1.1rem;
     }
 
-    .grid-container {
+    #our-creations .grid-container {
         grid-template-areas: "h h h h h h h h h h h h"
                              "o o o o o o o o o o o o"
                              "t t t t t t t t t t t t"
@@ -434,11 +449,42 @@ footer header {
         width: 120px;
     }
 
-    footer header {
-        margin: 0;
+    footer {
+        padding: 3.0rem 0;
+    }
+
+    footer .grid-container {
+        grid-template-areas: "b b b b b b b b b b b b"
+                             "i i i i i i i i i i i i"
+                             "m m m m m m m m m m m m"
+                             "c c c c c c c c c c c c";
+    }
+
+    footer .nav-items {
+        padding-top: 1.5rem;
+    }
+
+    footer .nav-items a {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        line-height: 2;
     }
 
     .social-icons {
         padding: 1rem 0;
+        justify-content: center;
+    }
+
+    .social-icons img {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .copyright-text {
+        grid-area: c;
+        color: var(--Dark-Gray);
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1.0rem 0;
     }
 }
