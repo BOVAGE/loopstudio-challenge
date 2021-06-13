@@ -64,6 +64,9 @@ button:hover {
     padding-top: 5.5rem;
     padding-bottom: 5.5rem;
 }
+.b-padding {
+    padding-bottom: 5.5rem;
+}
 
 header {
     display: flex;
@@ -162,7 +165,6 @@ h1 {
 /* creaction section rules */
 h2, button {
     text-transform: uppercase;
-    align-self: center;
 }
 
 h2 {
@@ -172,12 +174,14 @@ h2 {
 
 .grid-container {
     display: grid;
+    justify-items: legacy;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px max-content max-content;
+    grid-template-rows: 60px max-content max-content;
+    grid-auto-rows: max-content;
     grid-template-areas: "h h h h . . . . . . . b"
                          "o o o t t t r r r f f f"
                          "e e e s s s v v v g g g";
-    gap: 25px;
+    gap: 30px;
 }
 
 .grid-container img {
@@ -297,7 +301,11 @@ footer header {
 
 @media screen and (max-width: 980px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:"h h h h h h h h h h . b"
+                            "o o o o o o t t t t t t"
+                            "r r r r r r f f f f f f"
+                            "e e e e e e s s s s s s"
+                            "v v v v v v g g g g g g";
     }
 }
 
@@ -386,8 +394,26 @@ footer header {
         padding: 1.1rem 0 0;
     }
 
+    .side-text > p {
+        font-size: 1.1rem;
+    }
+
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "o o o o o o o o o o o o"
+                             "t t t t t t t t t t t t"
+                             "r r r r r r r r r r r r"
+                             "f f f f f f f f f f f f"
+                             "e e e e e e e e e e e e"
+                             "s s s s s s s s s s s s"
+                             "v v v v v v v v v v v v"
+                             "g g g g g g g g g g g g"
+                             "b b b b b b b b b b b b";
+        gap: 30px 0;
+    }
+
+    .grid-container > button {
+        justify-self: center;
     }
 
     h4 {
