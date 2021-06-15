@@ -8,15 +8,11 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,18 +25,16 @@ Users should be able to:
 
 ### Screenshot
 ## Desktop Preview
-![desktop screenshot](images\desktop screenshot.png)
+![desktop screenshot](images/desktop%20screenshot.png)
 
 ##Mobile Preview
-![mobile screenshot](images\mobile screeshot.png)
+![mobile screenshot](images/mobile%20screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BOVAGE/loopstudio-challenge)
-- Live Site URL: [Add live site URL here](https://bovage.github.io/loopstudio-challenge/)
-
-## My process
+- Solution URL: [solution URL](https://github.com/BOVAGE/loopstudio-challenge)
+- Live Site URL: [live site URL](https://bovage.github.io/loopstudio-challenge/)
 
 ### Built with
 
@@ -53,8 +47,6 @@ Users should be able to:
 
 ### What I learned
 I learned more about grid especially some grid property value I didn't know of before.
-
-To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>

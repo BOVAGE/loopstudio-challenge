@@ -57,32 +57,39 @@ button:hover {
 }
 
 .container {
-    padding: 0 5.3rem;
+    padding: 0 9.5rem;
 }
 
 .tb-padding {
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
+    padding-top: 8.0rem;
+    padding-bottom: 8.0rem;
 }
 .b-padding {
-    padding-bottom: 5.5rem;
+    padding-bottom: 8.0rem;
 }
 
 header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.brandname {
+    z-index: 3;
+    font-size: 1.8rem;
 }
 
 .nav-items {
     flex-basis: 25%;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .nav-items > li {
-    margin-right: 1.5rem;
+    margin-right: 2.0rem;
 }
 
 .nav-items > li:last-of-type {
@@ -96,7 +103,6 @@ header {
 
 /* hero section rules */
 #header {
-    position: relative;
     color: var(--White);
     padding: 30px 0;
     background-image: url("../images/desktop/image-hero.jpg");
@@ -108,7 +114,7 @@ header {
 .hero.container {
     display: flex;
     flex-flow: column nowrap;
-    height: 490px;
+    height: 550px;
 }
 
 h3 {
@@ -127,14 +133,13 @@ h3 {
 }
 
 #hero-text {
-    font-size: 3.0rem;
+    font-size: 4.0rem;
     text-transform: uppercase;
-    padding: 1.3rem;
-    width: 400px;
+    padding: 1.5rem;
+    width: 550px;
     line-height: 1;
-    border: 1px solid var(--White);
-    position: absolute;
-    bottom: 100px;
+    border: 2px solid var(--White);
+    margin: auto 0;
 }
 
 /* about section */
@@ -144,30 +149,27 @@ h3 {
     flex-flow: row nowrap;
 }
 
-.img-text-container img {
-    flex-basis: 50%;
-}
-
 .side-text {
+    min-width: 48%;
     background-color: white;
-    flex-basis: 50%;
     height: 60%;
     align-self: flex-end;
-    padding: 3rem 2.5rem 0.8rem;
+    padding: 3.0rem 0 0 4.0rem;
     position: relative;
-    right: 120px;
+    right: 125px;
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     padding: 1.1rem 0;
+    line-height: 1;
     font-weight: lighter;
 }
 
 .side-text > p {
-    font-size: 0.9rem;
-    padding: 1.2rem 0.8rem 0;
+    font-size: 1.2rem;
+    padding: 1.2rem 0.5rem 0;
     font-weight: bold;
     color: var(--Very-Dark-Gray);
 }
@@ -248,13 +250,14 @@ h4 {
 /* footer section */
 footer {
     background-color: var(--Black);
-    padding: 0.9rem 0;
+    padding: 3.0rem 0;
     color: var(--White);
 }
 
 footer .grid-container {
     grid-template-areas: "b b b b b . . . m m m m"
                          "i i i i i . c c c c c c";
+    row-gap: 1rem;
 }
 
 footer h3.brandname {
@@ -263,6 +266,7 @@ footer h3.brandname {
 
 footer .nav-items {
     grid-area: i;
+    justify-content: flex-start;
 }
 
 .social-icons {
@@ -306,7 +310,7 @@ footer .nav-items {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 1350px) {
     .img-text-container {
         flex-direction: column;
         height: auto;
@@ -356,19 +360,14 @@ footer .nav-items {
     header#navbar {
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 1rem;
     }
 
-    /* remove z-index and add to js */
     #menuicon {
         display: block;
         z-index: 3;
     }
-
-    .brandname {
-        z-index: 3;
-        font-size: 1.5rem;
-    }
-
+    
     .nav-items {
         flex-direction: column;
     }
@@ -405,8 +404,6 @@ footer .nav-items {
 
     #hero-text {
         width: 100%;
-        position: static;
-        margin: auto 0;
         font-size: 2.7rem;
     }
 
@@ -421,7 +418,7 @@ footer .nav-items {
     }
 
     .side-text > p {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     #our-creations .grid-container {
