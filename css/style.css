@@ -38,11 +38,12 @@ button {
     color: var(--Black);
     letter-spacing: 0.2rem;
     outline: none;
-    width: 100px;
-    height: 25px;
+    width: 110px;
+    height: 30px;
     text-align: center;
     background-color: var(--White);
-    border: 1px solid var(--Black);
+    border: 1px solid var(--Very-Dark-Gray);
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
 }
 
 button:hover {
@@ -57,27 +58,28 @@ button:hover {
 }
 
 .container {
-    padding: 0 9.5rem;
+    padding: 0 9.8rem;
 }
 
 .tb-padding {
-    padding-top: 8.0rem;
-    padding-bottom: 8.0rem;
+    padding-top: 9.0rem;
+    padding-bottom: 9.0rem;
 }
 .b-padding {
-    padding-bottom: 8.0rem;
+    padding-bottom: 9.0rem;
 }
 
 header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
 }
 
 .brandname {
     z-index: 3;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
 }
 
 .nav-items {
@@ -89,7 +91,7 @@ header {
 }
 
 .nav-items > li {
-    margin-right: 2.0rem;
+    margin-right: 2.2rem;
 }
 
 .nav-items > li:last-of-type {
@@ -114,7 +116,7 @@ header {
 .hero.container {
     display: flex;
     flex-flow: column nowrap;
-    height: 550px;
+    height: 600px;
 }
 
 h3 {
@@ -133,10 +135,10 @@ h3 {
 }
 
 #hero-text {
-    font-size: 4.0rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
-    padding: 1.5rem;
-    width: 550px;
+    padding: 2rem 2.5rem;
+    width: 650px;
     line-height: 1;
     border: 2px solid var(--White);
     margin: auto 0;
@@ -150,7 +152,7 @@ h3 {
 }
 
 .side-text {
-    min-width: 48%;
+    min-width: 45%;
     background-color: white;
     height: 60%;
     align-self: flex-end;
@@ -168,8 +170,8 @@ h1 {
 }
 
 .side-text > p {
-    font-size: 1.2rem;
-    padding: 1.2rem 0.5rem 0;
+    font-size: 1.1rem;
+    padding: 1.1rem 0.5rem 0;
     font-weight: bold;
     color: var(--Very-Dark-Gray);
 }
@@ -186,7 +188,7 @@ h2 {
 
 #our-creations .grid-container {
     justify-items: legacy;
-    grid-template-rows: 60px max-content max-content;
+    grid-template-rows: 100px max-content max-content;
     grid-auto-rows: max-content;
     grid-template-areas: "h h h h . . . . . . . b"
                          "o o o t t t r r r f f f"
