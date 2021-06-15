@@ -7,10 +7,9 @@ MENUICON.addEventListener("click", () => {
     MENUBAR.classList.toggle("show");
     if (MENUBAR.classList.contains("show")) {
         MENUICON.src="images/icon-close.svg"
-        document.body.style.overflow = "hidden";
+        document.body.classList.toggle("overflow")
     }else {
         MENUICON.src="images/icon-hamburger.svg"
-        document.body.style.overflow = "scroll";
     }
 })
 

@@ -62,11 +62,11 @@ button:hover {
 }
 
 .tb-padding {
-    padding-top: 9.0rem;
-    padding-bottom: 9.0rem;
+    padding-top: 9.2rem;
+    padding-bottom: 9.2rem;
 }
 .b-padding {
-    padding-bottom: 9.0rem;
+    padding-bottom: 9.2rem;
 }
 
 header {
@@ -116,7 +116,7 @@ header {
 .hero.container {
     display: flex;
     flex-flow: column nowrap;
-    height: 600px;
+    height: 595px;
 }
 
 h3 {
@@ -137,8 +137,8 @@ h3 {
 #hero-text {
     font-size: 4.5rem;
     text-transform: uppercase;
-    padding: 2rem 2.5rem;
-    width: 650px;
+    padding: 2.2rem 2.5rem;
+    width: 665px;
     line-height: 1;
     border: 2px solid var(--White);
     margin: auto 0;
@@ -188,7 +188,7 @@ h2 {
 
 #our-creations .grid-container {
     justify-items: legacy;
-    grid-template-rows: 100px max-content max-content;
+    grid-template-rows: 80px 450px 450px;
     grid-auto-rows: max-content;
     grid-template-areas: "h h h h . . . . . . . b"
                          "o o o t t t r r r f f f"
@@ -198,7 +198,7 @@ h2 {
 
 .grid-container img {
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 
 .grid-container > div {
@@ -301,10 +301,10 @@ footer .nav-items {
 
 .attribution { 
     display: none;
-    font-size: 1.0rem; 
+    font-size: 0.9rem; 
     text-align: center; 
-    color: black;
-    font-weight: bold;
+    color: var(--White);
+    font-weight: normal;
 }
 
 .attribution a {
@@ -332,6 +332,16 @@ footer .nav-items {
                             "r r r r r r f f f f f f"
                             "e e e e e e s s s s s s"
                             "v v v v v v g g g g g g";
+    }
+
+    #hero-text {
+        width: 100%;
+        font-size: 3.0rem;
+    }
+
+    .nav-items > li,
+    .brandname {
+        margin-right: 0.5rem;
     }
 }
 
@@ -381,10 +391,6 @@ footer .nav-items {
         text-transform: uppercase;
     }
 
-    .nav-items > li {
-        margin-right: 0;
-    }
-
     #menubar.nav-items {
         background-color: var(--Black);
         position: fixed;
@@ -404,9 +410,13 @@ footer .nav-items {
         height: 100vh;
     }
 
+    .overflow {
+        overflow: hidden;
+    }
+
     #hero-text {
-        width: 100%;
-        font-size: 2.7rem;
+        font-size: 2.5rem;
+        padding: 2rem;
     }
 
     #hero-text, h4 {
