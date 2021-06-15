@@ -25,16 +25,30 @@ Users should be able to:
 
 ### Screenshot
 ## Desktop Preview
+<<<<<<< HEAD
 ![desktop screenshot](images/desktop%20screenshot.png)
 
 ##Mobile Preview
 ![mobile screenshot](images/mobile%20screenshot.png)
+=======
+![desktop screenshot](./images/desktop%20screenshot.png).
+
+##Mobile Preview
+
+![mobile screenshot](./images/mobile%20screeshot.png).
+>>>>>>> refs/remotes/origin/main
 
 
 ### Links
 
 - Solution URL: [solution URL](https://github.com/BOVAGE/loopstudio-challenge)
+<<<<<<< HEAD
 - Live Site URL: [live site URL](https://bovage.github.io/loopstudio-challenge/)
+=======
+- Live Site URL: [site URL](https://bovage.github.io/loopstudio-challenge)
+
+## My process
+>>>>>>> refs/remotes/origin/main
 
 ### Built with
 
@@ -71,7 +85,7 @@ const proudOfThisFunc = () => {
 ### Useful resources
 
 - [Example resource 1](https://www.w3schools.com/) - This helped me for referencing. I really like going through reference to know the actual use of each html tag before using it.
-- [Example resource 2](https://developer.mozilla.org/) - This is an amazing website which helped me. I'd recommend it to anyone still learning this anything web dev.
+- [Example resource 2](https://developer.mozilla.org/) - This is an amazing website which helped me. I'd recommend it to anyone learning  anything web dev related.
 
 ## Author
 
