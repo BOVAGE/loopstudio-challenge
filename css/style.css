@@ -434,6 +434,7 @@ footer .nav-items {
     }
 
     #our-creations .grid-container {
+        grid-template-rows: 80px max-content max-content;
         grid-template-areas: "h h h h h h h h h h h h"
                              "o o o o o o o o o o o o"
                              "t t t t t t t t t t t t"

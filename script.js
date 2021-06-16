@@ -5,9 +5,9 @@ const MENUBAR = document.querySelector("#menubar");
 
 MENUICON.addEventListener("click", () => {
     MENUBAR.classList.toggle("show");
+    document.body.classList.toggle("overflow")
     if (MENUBAR.classList.contains("show")) {
         MENUICON.src="images/icon-close.svg"
-        document.body.classList.toggle("overflow")
     }else {
         MENUICON.src="images/icon-hamburger.svg"
     }
