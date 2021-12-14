@@ -198,7 +198,7 @@ h2 {
 
 .grid-container img {
     width: 100%;
-    height: fit-content;
+    height: 100%;
 }
 
 .grid-container > div {
